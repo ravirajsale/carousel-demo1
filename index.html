@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <style media="screen">
+        .carousel-cell {
+            width: 40%;
+            
+            float: left;
+        }
+
+        /* cell number */
+        .carousel-cell:before {
+            display: block;
+
+        }
+        .flickity-prev-next-button.next {
+    right: -55px;
+}
+.flickity-prev-next-button.previous {
+    left: -8px;
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Content -->
+    <div class="container">
+
+        <div class="xzoom-container">
+            <img src="./images/1-min.jpg" class="xzoom " id="x" x0riginal="./images/1.jpg">
+            <!-- <video class="xzoom-gallery"   xpreview="images/123.mp4" width="80" height="100" autoplay muted>
+                <source src="images/123.mp4" type="video/mp4"   xpreview="images/123.mp4"> -->
+                <video id="z" width="400px" height="400px" controls muted>
+                    <source src="images/123.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+
+            <div class="xzoom-thumbs">
+                <div class="carousel-cell">
+                    
+
+
+                
+
+                <div class="carousel"  data-flickity='{ "wrapAround": false, "autoPlay": false, "imagesLoaded":true }'>
+                    <div class="carousel-cell reboot">
+                        <img class="w3-image xzoom-gallery" src="images/1-min.jpg" xpreview="images/1-min.jpg">
+                    </div>
+                    <div class="carousel-cell reboot">
+                        <img class="w3-image xzoom-gallery" src="images/4-min.jpg" xpreview="images/4-min.jpg">
+                    </div>
+                    <div class="carousel-cell reboot">
+                        <img class="w3-image xzoom-gallery" src="images/3-min.jpg" xpreview="images/3-min.jpg">
+                    </div>
+                    <div class="carousel-cell reboot">
+                        <img class="w3-image xzoom-gallery" src="images/2-min.jpg" xpreview="images/2-min.jpg">
+                    </div>
+                    <div class="carousel-cell ">
+                        <img id="q" src="images/play.jpg">
+                    </div>
+ 
+
+
+
+
+                    <!--<div class="carousel-cell">
+                        <video id="q" width="100" height="100" controls muted  >
+                            <source src="images/123.mp4" type="video/mp4">
+                        
+                          </video>
+                    </div> -->
+                </div>
+        
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+            </div>
+
+        </div>
+        </div>
+         <div class="description">
+            <h1>Women's red top</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Perferendis cum facere vel quod, placeat iure voluptatibus 
+                quos ipsum molestias dolores ducimus sed aperiam id, expedita 
+                nobis, rem laboriosam. Similique, ab.
+
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Perferendis cum facere vel quod, placeat iure voluptatibus 
+                quos ipsum molestias dolores ducimus sed aperiam id, expedita 
+                nobis, rem laboriosam. Similique, ab.
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quod labore ab asperiores et reprehenderit aliquam soluta ut qui, deserunt tenetur nostrum deleniti quasi. Nesciunt fugit assumenda pariatur optio ullam?
+            </p>
+            <span>$150</span>
+            <div>
+                 <button class="buy">Buy now</button>
+                 <button class="cart">Add to cart</button>
+            </div>    
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/zoom.js"></script>
+    <script src="./js/script.js"></script>
+
+
+    <script>
+
+$(document).ready(function(){
+  $(".reboot").click(function(){
+      $("#z").hide();
+    
+  });   
+});
+        $(document).ready(function()
+        {
+            $("#z").hide();
+        });
+
+
+        $(document).ready(function(){
+  $("#q").click(function(){
+      $("#x").hide();
+    $("#z").show();
+  });   
+});
+    </script>
+</body>
+
+</html>

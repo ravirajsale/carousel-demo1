@@ -1,0 +1,28 @@
+@media screen and (min-width: 1024px) {
+  .one {
+    height: 400px;
+    width: 300px;
+    background-color: aqua;
+  }
+  .two {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: #fff70e;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .one {
+    display: none;
+  }
+  .two {
+    height: 400px;
+    width: 300px;
+    background-color: #2e3d3d;
+  }
+}
+/*# sourceMappingURL=ind.css.map */
